@@ -1,0 +1,18 @@
+<div class="container">
+  <table>
+    <tr>
+      <th>Author</th>
+      <th>Commit</th>
+      <th>Message</th>
+      <th>Date</th>
+    </tr>
+    <tbody>
+      <tr *ngFor="let commit of commits;">
+        <td> {{commit.author}} </td>
+        <td> {{commit.commit}} </td>
+        <td> {{commit.message}}</td>
+        <td> {{commit.date}}   </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
